@@ -1,0 +1,30 @@
+struct User {
+    name: string,
+    age: int,
+}
+
+fn factorial(n: int) -> int {
+    if n <= 1 {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+
+fn main() {
+    let user = User {
+        name: "Eram",
+        age: 23,
+    };
+
+    println("Hello " + user.name);
+
+    let result = factorial(5);
+
+    println("Factorial:");
+    println(result);
+
+    for i in 0..5 {
+        println(i);
+    }
+}

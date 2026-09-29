@@ -1,0 +1,29 @@
+struct User {
+    name: string,
+    age: int,
+}
+
+enum Status {
+    Success,
+    Failure,
+}
+
+fn describe(s: Status) -> string {
+    return match s {
+        Success => "it worked",
+        Failure => "it failed",
+    };
+}
+
+fn main() {
+    let user = User {
+        name: "Eram",
+        age: 23,
+    };
+
+    println(user.name);
+    println(user.age);
+
+    let s = Success;
+    println(describe(s));
+}

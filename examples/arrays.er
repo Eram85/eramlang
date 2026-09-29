@@ -1,0 +1,13 @@
+fn main() {
+    let mut numbers = [10, 20, 30, 40];
+    println(numbers[0]);
+
+    numbers[1] = 50;
+    println(numbers[1]);
+
+    println(len(numbers));
+    push(numbers, 100);
+    println(len(numbers));
+    println(pop(numbers));
+    println(len(numbers));
+}

@@ -1,6 +1,0 @@
-// This program intentionally triggers a runtime error to demonstrate
-// EramLang's diagnostics. Run with `eram run examples/errors.er`.
-fn main() {
-    let numbers = [1, 2, 3];
-    println(numbers[10]); // array index out of bounds
-}
